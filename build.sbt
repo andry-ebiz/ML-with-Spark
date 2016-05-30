@@ -10,6 +10,8 @@ libraryDependencies += "org.apache.spark" % "spark-mllib_2.11" % "1.6.0"
 
 libraryDependencies += "org.elasticsearch" %% "elasticsearch-spark" % "2.2.0"
 
+libraryDependencies += "com.github.nscala-time" %% "nscala-time" % "2.12.0"
+
 libraryDependencies += "com.databricks" % "spark-csv_2.11" % "1.4.0"
 
 libraryDependencies += "joda-time" % "joda-time" % "2.9.2"

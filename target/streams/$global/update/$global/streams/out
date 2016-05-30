@@ -7,7 +7,7 @@
 [debug] == resolving dependencies for default#ml-with-spark_2.11;1.0 [compile]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->org.scala-lang#scala-library;2.11.8 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.11.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@502a3af
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@25e63b59
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.8
 [debug] 	found org.scala-lang#scala-library;2.11.8 in sbt-chain
 [debug] 	[2.11.8] org.scala-lang#scala-library;2.11.8
@@ -4232,6 +4232,64 @@
 [debug] == resolving dependencies org.elasticsearch#elasticsearch-spark_2.11;2.2.0->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)]
 [debug] == resolving dependencies org.elasticsearch#elasticsearch-spark_2.11;2.2.0->org.scala-lang#scala-library;2.11.8 [runtime->compile]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->org.elasticsearch#elasticsearch-spark_2.11;2.2.0 [compile->master]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->default(compile)]
+[info] Resolving com.github.nscala-time#nscala-time_2.11;2.12.0 ...
+[debug] sbt-chain: Checking cache for: dependency: com.github.nscala-time#nscala-time_2.11;2.12.0 {compile=[default(compile)]}
+[info] Resolving com.github.nscala-time#nscala-time_2.11;2.12.0 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: com.github.nscala-time#nscala-time_2.11;2.12.0 {compile=[default(compile)]}
+[debug] 		tried /Users/arandria/.ivy2/local/com.github.nscala-time/nscala-time_2.11/2.12.0/ivys/ivy.xml
+[debug] 	local: no ivy file found for com.github.nscala-time#nscala-time_2.11;2.12.0
+[debug] 		tried https://jcenter.bintray.com/com/github/nscala-time/nscala-time_2.11/2.12.0/nscala-time_2.11-2.12.0.pom
+[debug] 	jcenter: found md file for com.github.nscala-time#nscala-time_2.11;2.12.0
+[debug] 		=> https://jcenter.bintray.com/com/github/nscala-time/nscala-time_2.11/2.12.0/nscala-time_2.11-2.12.0.pom (2.12.0)
+[debug] downloading https://jcenter.bintray.com/com/github/nscala-time/nscala-time_2.11/2.12.0/nscala-time_2.11-2.12.0.pom ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/com/github/nscala-time/nscala-time_2.11/2.12.0/nscala-time_2.11-2.12.0.pom
+[debug] 	jcenter: downloading https://jcenter.bintray.com/com/github/nscala-time/nscala-time_2.11/2.12.0/nscala-time_2.11-2.12.0.pom.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/com/github/nscala-time/nscala-time_2.11/2.12.0/nscala-time_2.11-2.12.0.pom
+[debug] 	[SUCCESSFUL ] com.github.nscala-time#nscala-time_2.11;2.12.0!nscala-time_2.11.pom(pom.original) (210ms)
+[debug] 		tried /Users/arandria/.ivy2/local/com.github.nscala-time/nscala-time_2.11/2.12.0/jars/nscala-time_2.11.jar
+[debug] 		tried https://jcenter.bintray.com/com/github/nscala-time/nscala-time_2.11/2.12.0/nscala-time_2.11-2.12.0.jar
+[debug] 	found com.github.nscala-time#nscala-time_2.11;2.12.0 in jcenter
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->runtime]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->compile]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [compile->master(compile)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [compile->compile(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [compile->master(compile)]
+[info] Resolving joda-time#joda-time;2.9.3 ...
+[debug] sbt-chain: Checking cache for: dependency: joda-time#joda-time;2.9.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[info] Resolving joda-time#joda-time;2.9.3 ...
+[debug] sbt-chain-delegate: Checking cache for: dependency: joda-time#joda-time;2.9.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] 		tried /Users/arandria/.ivy2/local/joda-time/joda-time/2.9.3/ivys/ivy.xml
+[debug] 	local: no ivy file found for joda-time#joda-time;2.9.3
+[debug] 		tried https://jcenter.bintray.com/joda-time/joda-time/2.9.3/joda-time-2.9.3.pom
+[debug] 	jcenter: found md file for joda-time#joda-time;2.9.3
+[debug] 		=> https://jcenter.bintray.com/joda-time/joda-time/2.9.3/joda-time-2.9.3.pom (2.9.3)
+[debug] downloading https://jcenter.bintray.com/joda-time/joda-time/2.9.3/joda-time-2.9.3.pom ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/joda-time/joda-time/2.9.3/joda-time-2.9.3.pom
+[debug] 	jcenter: downloading https://jcenter.bintray.com/joda-time/joda-time/2.9.3/joda-time-2.9.3.pom.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/joda-time/joda-time/2.9.3/joda-time-2.9.3.pom
+[debug] 	[SUCCESSFUL ] joda-time#joda-time;2.9.3!joda-time.pom(pom.original) (234ms)
+[debug] 		tried /Users/arandria/.ivy2/local/joda-time/joda-time/2.9.3/jars/joda-time.jar
+[debug] 		tried https://jcenter.bintray.com/joda-time/joda-time/2.9.3/joda-time-2.9.3.jar
+[debug] 	found joda-time#joda-time;2.9.3 in jcenter
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [compile->compile(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [compile->runtime(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [compile->compile]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [compile->master(compile)]
+[info] Resolving org.joda#joda-convert;1.2 ...
+[debug] sbt-chain: Checking cache for: dependency: org.joda#joda-convert;1.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: org.joda#joda-convert;1.2
+[debug] 	found org.joda#joda-convert;1.2 in sbt-chain
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [compile->compile(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [compile->runtime(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [compile->compile]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [runtime->compile]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [runtime->runtime(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [runtime->compile]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [runtime->runtime(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [runtime->compile]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->master]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->default(compile)]
 [info] Resolving com.databricks#spark-csv_2.11;1.4.0 ...
 [debug] sbt-chain: Checking cache for: dependency: com.databricks#spark-csv_2.11;1.4.0 {compile=[default(compile)]}
@@ -4268,13 +4326,10 @@
 [debug] == resolving dependencies com.databricks#spark-csv_2.11;1.4.0->com.univocity#univocity-parsers;1.5.1 [runtime->compile]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->master]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->default(compile)]
-[info] Resolving joda-time#joda-time;2.9.2 ...
-[debug] sbt-chain: Checking cache for: dependency: joda-time#joda-time;2.9.2 {compile=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: joda-time#joda-time;2.9.2
-[debug] 	found joda-time#joda-time;2.9.2 in sbt-chain
-[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->runtime]
-[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->compile]
-[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->master]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->default(compile)]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->runtime]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->compile]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->master]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.quantifind#wisp_2.11;0.0.4 [compile->default(compile)]
 [info] Resolving com.quantifind#wisp_2.11;0.0.4 ...
 [debug] sbt-chain: Checking cache for: dependency: com.quantifind#wisp_2.11;0.0.4 {compile=[default(compile)]}
@@ -8072,6 +8127,22 @@
 [debug] == resolving dependencies org.elasticsearch#elasticsearch-spark_2.11;2.2.0->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)]
 [debug] == resolving dependencies org.elasticsearch#elasticsearch-spark_2.11;2.2.0->org.scala-lang#scala-library;2.11.8 [runtime->compile]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->org.elasticsearch#elasticsearch-spark_2.11;2.2.0 [compile->master]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->default(compile)]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->runtime]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->compile]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [compile->master(compile)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [compile->compile(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [compile->master(compile)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [compile->compile(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [compile->master(compile)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [compile->compile(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [runtime->compile]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [runtime->runtime(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [runtime->compile]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [runtime->runtime(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [runtime->compile]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->master]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->default(compile)]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->runtime]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->compile]
@@ -8092,9 +8163,10 @@
 [debug] == resolving dependencies com.databricks#spark-csv_2.11;1.4.0->com.univocity#univocity-parsers;1.5.1 [runtime->compile]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->master]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->default(compile)]
-[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->runtime]
-[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->compile]
-[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->master]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->default(compile)]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->runtime]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->compile]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->master]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.quantifind#wisp_2.11;0.0.4 [compile->default(compile)]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.quantifind#wisp_2.11;0.0.4 [compile->runtime]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.quantifind#wisp_2.11;0.0.4 [compile->compile]
@@ -11814,6 +11886,22 @@
 [debug] == resolving dependencies org.elasticsearch#elasticsearch-spark_2.11;2.2.0->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)]
 [debug] == resolving dependencies org.elasticsearch#elasticsearch-spark_2.11;2.2.0->org.scala-lang#scala-library;2.11.8 [runtime->compile]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->org.elasticsearch#elasticsearch-spark_2.11;2.2.0 [compile->master]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->default(compile)]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->runtime]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->compile]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [compile->master(compile)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [compile->compile(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [compile->master(compile)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [compile->compile(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [compile->master(compile)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [compile->compile(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [runtime->compile]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [runtime->runtime(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [runtime->compile]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [runtime->runtime(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [runtime->compile]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->master]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->default(compile)]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->runtime]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->compile]
@@ -11834,9 +11922,10 @@
 [debug] == resolving dependencies com.databricks#spark-csv_2.11;1.4.0->com.univocity#univocity-parsers;1.5.1 [runtime->compile]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->master]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->default(compile)]
-[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->runtime]
-[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->compile]
-[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->master]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->default(compile)]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->runtime]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->compile]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->master]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.quantifind#wisp_2.11;0.0.4 [compile->default(compile)]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.quantifind#wisp_2.11;0.0.4 [compile->runtime]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.quantifind#wisp_2.11;0.0.4 [compile->compile]
@@ -15559,6 +15648,22 @@
 [debug] == resolving dependencies org.elasticsearch#elasticsearch-spark_2.11;2.2.0->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)]
 [debug] == resolving dependencies org.elasticsearch#elasticsearch-spark_2.11;2.2.0->org.scala-lang#scala-library;2.11.8 [runtime->compile]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->org.elasticsearch#elasticsearch-spark_2.11;2.2.0 [compile->master]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->default(compile)]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->runtime]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->compile]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [compile->master(compile)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [compile->compile(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [compile->master(compile)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [compile->compile(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [compile->master(compile)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [compile->compile(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [runtime->compile]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [runtime->runtime(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [runtime->compile]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [runtime->runtime(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [runtime->compile]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->master]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->default(compile)]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->runtime]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->compile]
@@ -15579,9 +15684,10 @@
 [debug] == resolving dependencies com.databricks#spark-csv_2.11;1.4.0->com.univocity#univocity-parsers;1.5.1 [runtime->compile]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->master]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->default(compile)]
-[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->runtime]
-[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->compile]
-[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->master]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->default(compile)]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->runtime]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->compile]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->master]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.quantifind#wisp_2.11;0.0.4 [compile->default(compile)]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.quantifind#wisp_2.11;0.0.4 [compile->runtime]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.quantifind#wisp_2.11;0.0.4 [compile->compile]
@@ -19303,6 +19409,22 @@
 [debug] == resolving dependencies org.elasticsearch#elasticsearch-spark_2.11;2.2.0->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)]
 [debug] == resolving dependencies org.elasticsearch#elasticsearch-spark_2.11;2.2.0->org.scala-lang#scala-library;2.11.8 [runtime->compile]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->org.elasticsearch#elasticsearch-spark_2.11;2.2.0 [compile->master]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->default(compile)]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->runtime]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->compile]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [compile->master(compile)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [compile->compile(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [compile->master(compile)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [compile->compile(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [compile->master(compile)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [compile->compile(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [runtime->compile]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [runtime->runtime(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [runtime->compile]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [runtime->runtime(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [runtime->compile]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->master]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->default(compile)]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->runtime]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->compile]
@@ -19323,9 +19445,10 @@
 [debug] == resolving dependencies com.databricks#spark-csv_2.11;1.4.0->com.univocity#univocity-parsers;1.5.1 [runtime->compile]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->master]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->default(compile)]
-[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->runtime]
-[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->compile]
-[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->master]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->default(compile)]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->runtime]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->compile]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->master]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.quantifind#wisp_2.11;0.0.4 [compile->default(compile)]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.quantifind#wisp_2.11;0.0.4 [compile->runtime]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.quantifind#wisp_2.11;0.0.4 [compile->compile]
@@ -23047,6 +23170,22 @@
 [debug] == resolving dependencies org.elasticsearch#elasticsearch-spark_2.11;2.2.0->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)]
 [debug] == resolving dependencies org.elasticsearch#elasticsearch-spark_2.11;2.2.0->org.scala-lang#scala-library;2.11.8 [runtime->compile]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->org.elasticsearch#elasticsearch-spark_2.11;2.2.0 [compile->master]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->default(compile)]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->runtime]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->compile]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [compile->master(compile)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [compile->compile(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [compile->master(compile)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [compile->compile(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [compile->master(compile)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [compile->compile(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [runtime->runtime(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.scala-lang#scala-library;2.11.8 [runtime->compile]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [runtime->runtime(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->joda-time#joda-time;2.9.3 [runtime->compile]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [runtime->runtime(*)]
+[debug] == resolving dependencies com.github.nscala-time#nscala-time_2.11;2.12.0->org.joda#joda-convert;1.2 [runtime->compile]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.github.nscala-time#nscala-time_2.11;2.12.0 [compile->master]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->default(compile)]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->runtime]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->compile]
@@ -23067,9 +23206,10 @@
 [debug] == resolving dependencies com.databricks#spark-csv_2.11;1.4.0->com.univocity#univocity-parsers;1.5.1 [runtime->compile]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.databricks#spark-csv_2.11;1.4.0 [compile->master]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->default(compile)]
-[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->runtime]
-[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->compile]
-[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.2 [compile->master]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->default(compile)]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->runtime]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->compile]
+[debug] == resolving dependencies default#ml-with-spark_2.11;1.0->joda-time#joda-time;2.9.3 [compile->master]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.quantifind#wisp_2.11;0.0.4 [compile->default(compile)]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.quantifind#wisp_2.11;0.0.4 [compile->runtime]
 [debug] == resolving dependencies default#ml-with-spark_2.11;1.0->com.quantifind#wisp_2.11;0.0.4 [compile->compile]
@@ -23305,8 +23445,13 @@
 [debug] 	[NOT REQUIRED] org.apache.spark#spark-core_2.11;1.6.0!spark-core_2.11.jar
 [debug] 	[NOT REQUIRED] org.apache.spark#spark-mllib_2.11;1.6.0!spark-mllib_2.11.jar
 [debug] 	[NOT REQUIRED] org.elasticsearch#elasticsearch-spark_2.11;2.2.0!elasticsearch-spark_2.11.jar
+[debug] 		tried https://jcenter.bintray.com/com/github/nscala-time/nscala-time_2.11/2.12.0/nscala-time_2.11-2.12.0.jar
+[info] downloading https://jcenter.bintray.com/com/github/nscala-time/nscala-time_2.11/2.12.0/nscala-time_2.11-2.12.0.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/com/github/nscala-time/nscala-time_2.11/2.12.0/nscala-time_2.11-2.12.0.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/com/github/nscala-time/nscala-time_2.11/2.12.0/nscala-time_2.11-2.12.0.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/com/github/nscala-time/nscala-time_2.11/2.12.0/nscala-time_2.11-2.12.0.jar
+[info] 	[SUCCESSFUL ] com.github.nscala-time#nscala-time_2.11;2.12.0!nscala-time_2.11.jar (972ms)
 [debug] 	[NOT REQUIRED] com.databricks#spark-csv_2.11;1.4.0!spark-csv_2.11.jar
-[debug] 	[NOT REQUIRED] joda-time#joda-time;2.9.2!joda-time.jar
 [debug] 	[NOT REQUIRED] com.quantifind#wisp_2.11;0.0.4!wisp_2.11.jar
 [debug] 	[NOT REQUIRED] org.apache.avro#avro-mapred;1.7.7!avro-mapred.jar
 [debug] 	[NOT REQUIRED] com.twitter#chill_2.11;0.5.0!chill_2.11.jar
@@ -23460,6 +23605,13 @@
 [debug] 	[NOT REQUIRED] javax.xml.bind#jaxb-api;2.2.7!jaxb-api.jar
 [debug] 	[NOT REQUIRED] com.sun.istack#istack-commons-runtime;2.16!istack-commons-runtime.jar
 [debug] 	[NOT REQUIRED] javax.xml.bind#jsr173_api;1.0!jsr173_api.jar
+[debug] 		tried https://jcenter.bintray.com/joda-time/joda-time/2.9.3/joda-time-2.9.3.jar
+[info] downloading https://jcenter.bintray.com/joda-time/joda-time/2.9.3/joda-time-2.9.3.jar ...
+[debug] 	jcenter: downloading https://jcenter.bintray.com/joda-time/joda-time/2.9.3/joda-time-2.9.3.jar
+[debug] 	jcenter: downloading https://jcenter.bintray.com/joda-time/joda-time/2.9.3/joda-time-2.9.3.jar.sha1
+[debug] sha1 OK for https://jcenter.bintray.com/joda-time/joda-time/2.9.3/joda-time-2.9.3.jar
+[info] 	[SUCCESSFUL ] joda-time#joda-time;2.9.3!joda-time.jar (601ms)
+[debug] 	[NOT REQUIRED] org.joda#joda-convert;1.2!joda-convert.jar
 [debug] 	[NOT REQUIRED] org.apache.commons#commons-csv;1.1!commons-csv.jar
 [debug] 	[NOT REQUIRED] com.univocity#univocity-parsers;1.5.1!univocity-parsers.jar
 [debug] 	[NOT REQUIRED] net.databinder#unfiltered-filter_2.11;0.8.3!unfiltered-filter_2.11.jar
@@ -23481,7 +23633,7 @@
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(bundle)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4!scala-parser-combinators_2.11.jar(bundle)
 [debug] 	[NOT REQUIRED] jline#jline;2.12.1!jline.jar
-[debug] :: resolution report :: resolve 2840ms :: artifacts dl 66ms
+[debug] :: resolution report :: resolve 4437ms :: artifacts dl 1635ms
 [debug] 	report for default#ml-with-spark_2.11;1.0 compile produced in /Users/arandria/IdeaProjects/ML-with-Spark/target/resolution-cache/reports/default-ml-with-spark_2.11-compile.xml
 [debug] 	report for default#ml-with-spark_2.11;1.0 runtime produced in /Users/arandria/IdeaProjects/ML-with-Spark/target/resolution-cache/reports/default-ml-with-spark_2.11-runtime.xml
 [debug] 	report for default#ml-with-spark_2.11;1.0 test produced in /Users/arandria/IdeaProjects/ML-with-Spark/target/resolution-cache/reports/default-ml-with-spark_2.11-test.xml
@@ -23495,5 +23647,5 @@
 [debug] 	report for default#ml-with-spark_2.11;1.0 docs produced in /Users/arandria/IdeaProjects/ML-with-Spark/target/resolution-cache/reports/default-ml-with-spark_2.11-docs.xml
 [debug] 	report for default#ml-with-spark_2.11;1.0 pom produced in /Users/arandria/IdeaProjects/ML-with-Spark/target/resolution-cache/reports/default-ml-with-spark_2.11-pom.xml
 [debug] 	report for default#ml-with-spark_2.11;1.0 scala-tool produced in /Users/arandria/IdeaProjects/ML-with-Spark/target/resolution-cache/reports/default-ml-with-spark_2.11-scala-tool.xml
-[debug] 	resolve done (2840ms resolve - 66ms download)
+[debug] 	resolve done (4437ms resolve - 1635ms download)
 [info] Done updating.

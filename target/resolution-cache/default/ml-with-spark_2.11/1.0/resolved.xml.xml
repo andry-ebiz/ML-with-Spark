@@ -4,7 +4,7 @@
 		module="ml-with-spark_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160411175703"
+		publication="20160530152418"
 	>
 		<description>
 		ML-with-Spark
@@ -37,6 +37,7 @@
 		<dependency org="org.apache.spark" name="spark-core_2.11" rev="1.6.0" conf="compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-mllib_2.11" rev="1.6.0" conf="compile->default(compile)"/>
 		<dependency org="org.elasticsearch" name="elasticsearch-spark_2.11" rev="2.2.0" conf="compile->default(compile)"/>
+		<dependency org="com.github.nscala-time" name="nscala-time_2.11" rev="2.12.0" conf="compile->default(compile)"/>
 		<dependency org="com.databricks" name="spark-csv_2.11" rev="1.4.0" conf="compile->default(compile)"/>
 		<dependency org="joda-time" name="joda-time" rev="2.9.2" conf="compile->default(compile)"/>
 		<dependency org="com.quantifind" name="wisp_2.11" rev="0.0.4" conf="compile->default(compile)"/>

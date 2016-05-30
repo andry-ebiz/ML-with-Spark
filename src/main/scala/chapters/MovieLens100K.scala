@@ -13,8 +13,15 @@ import org.apache.spark.{SparkConf, SparkContext}
 import com.quantifind.charts.Highcharts._
 import org.apache.spark.sql._
 import scala.Predef
+import scala.collection.immutable.IndexedSeq
+import scala.collection.mutable.{ArrayBuffer, Traversable}
 import scala.collection.{SeqView, Map}
 import scala.util.Try
+import org.apache.spark.mllib.linalg.{Vector, Vectors}
+import org.joda.time._
+import com.github.nscala_time.time.Imports._
+
+
 
 object SetConfs {
 
@@ -47,7 +54,7 @@ object LoadDataSets {
 
   /* Construct case classes of data */
   case class User(id: String, age: Integer, gender: String, occupation: String, zipCode: String)
-  case class Data(userid: Integer, itemid: Integer, rating: Double, t: BigInt)
+  case class Data(userid: Integer, itemid: Integer, rating: Double, t: Int)
   case class MovieDate(dateRelease: String, dateVideoRelease: String )
 
 
@@ -64,26 +71,53 @@ object LoadDataSets {
     .map(r => Data(r(0).trim.toInt, r(1).trim.toInt, r(2).trim.toDouble, r(3).trim.toInt ))
 }
 
+
+object TimestampToCategorical {
+
+  def main(args: Array[String]) {
+    import chapters.LoadDataSets._
+
+    val timestamps= uData.map{ case(d: Data) => d.t.toInt }.take(5)
+    // timestamps.foreach(println)
+
+    val timp: Int = 881250949
+    DateTime dt = new.DateTime
+
+
+  } // endMain
+} // endObject
+
+
 object ExtractCategoricalFeatures {
 
   def main(args: Array[String]) {
     import chapters.LoadDataSets._
 
-    // Collect all the possible states of the occupation variable
-    val allOccupations = uUser.map{case(u: User) => u.occupation}.distinct.collect.sorted
+    /* Collect all the possible states of the occupation variable */
+    val allOccupations: Array[String] = uUser.map{case(u: User) => u.occupation}.distinct.collect.sorted
     // allOccupations.foreach(println)
 
-    val allOccupationsDict = allOccupations.zipWithIndex.toMap
+    /* 1 -- Make dict of all occupations
+    * 1 "until" n is the range 1..n-1, not 1..n.
+    * Use "to" if you want to include the upper bound.
+    * */
+    val allOccupationsDict: IndexedSeq[(String, Int)] = for (o <- 0 until allOccupations.size) yield (allOccupations(o), o)
+      // allOccupationsDict.foreach(println)
 
-    allOccupationsDict.foreach(println)
-    println(allOccupationsDict("administrator"))
+    val seqArray = allOccupationsDict.map{
+      case(key, value) =>
+        val tmp: Array[Int] = Array.fill(allOccupations.size)(0)
+        tmp(value) = 1
+        tmp }
+      // for (i <- 0 until allOccupations.size) { seqArray(i).foreach(print); println }
+
+    /* 2 -- Make dict of all occupations */
+    val allOccupationsDict2 = allOccupations.zipWithIndex.toMap
+    // allOccupationsDict2.foreach(println)
 
 
-
-
-  }
-
-}
+    } // endMain
+  } // endObject
 
 object ExploreDBUser {
 
